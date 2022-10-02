@@ -8,3 +8,7 @@ And whichever is clicked is selected according to the index.
 
 WARNINGS:   
 React Hook useEffect has a missing dependency: 'setSelectedIndex'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+ERROR:
+ERROR in src\App.js
+#'List' is not defined  react/jsx-no-undef
