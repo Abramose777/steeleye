@@ -13,7 +13,7 @@ const List = () => {
   }) => {
     return (
       <li
-        style={{ backgroundColor: isSelected ? 'green' : 'red' }}
+        style={{ backgroundColor: isSelected ? 'green' : 'red' }} // if selected then green background otherwise its red
         onClick={onClickHandler(index)}
       >
         {text}
@@ -43,7 +43,7 @@ const List = () => {
       setSelectedIndex(index);
     };
 
-    return (
+    return (// to display the content in the web with particular index
       <ul style={{ textAlign: 'left' }}>
         {items.map((item, index) => (
           <SingleListItem
@@ -63,7 +63,7 @@ const List = () => {
     })),
   };
 
-  WrappedListComponent.defaultProps = {
+  WrappedListComponent.defaultProps = { // default props for items is set to null
     items: null,
   };
 
